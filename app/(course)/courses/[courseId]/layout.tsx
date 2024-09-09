@@ -30,7 +30,7 @@ const CourseLayout = async ({
         include: {
           userProgress: {
             where: {
-              userId,
+              userId: userId!,
             },
           },
         },

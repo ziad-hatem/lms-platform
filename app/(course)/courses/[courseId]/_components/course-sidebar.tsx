@@ -14,10 +14,7 @@ interface CourseSidebarProps {
   progressCount: number;
 }
 
-export const CourseSidebar = async ({
-  course,
-  progressCount,
-}: CourseSidebarProps) => {
+export const CourseSidebar = async ({ course, progressCount }: any) => {
   const { userId } = auth();
 
   if (!userId) {
@@ -40,7 +37,7 @@ export const CourseSidebar = async ({
         {/* Check */}
       </div>
       <div className="flex flex-col w-full">
-        {course.chapters.map((chapter) => (
+        {course.chapters.map((chapter: any) => (
           <CourseSidebarItem
             key={chapter.id}
             id={chapter.id}
