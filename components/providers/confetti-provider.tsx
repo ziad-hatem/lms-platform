@@ -9,7 +9,7 @@ export const ConfettiProvider = () => {
 
   return (
     <ReactConfetti
-      className="pointer-events-none z-[100] w-full"
+      className="pointer-events-none z-[999] w-full"
       numberOfPieces={500}
       recycle={false}
       onConfettiComplete={() => {
